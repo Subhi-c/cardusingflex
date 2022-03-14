@@ -16,9 +16,9 @@
     }   
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    body{background-color: hsl(217, 54%, 11%);}
+    body{background-color: hsl(217, 54%, 11%); display: flex; justify-content: center;}
     #image img{width: 220px; height: 220px; margin-top: 23px; margin-left: 24px;  border-radius: 10px;}
-    #container{display: flex; align-content: center; flex-direction: column; margin-top: 20px; margin-left: 430px;   background-color:  hsl(216, 50%, 16%); width: 270px; height: 510px; border-radius: 20px;position: relative;}
+    #container{display: flex; align-content: center; flex-direction: column; justify-content: center;  background-color:  hsl(216, 50%, 16%); width: 270px; height: 510px; border-radius: 20px;position: relative;}
     #text{padding: 10px 10px; color: hsl(0, 0%, 100%); font-family: "Outfit"; font-size: 18px;}
     #flex{display: flex; align-content: center; justify-content: space-between; flex-direction: row;}
     #flex p{padding: 0px 0px; margin: 0px 0px}
@@ -35,7 +35,7 @@
       border-radius: 10px;
       margin: 20px 26px;
       padding: 100px 20px;
-      height: 25px;
+      height: 15px;
       transition: .3s ease;
       text-align: center;
       justify-content: center;
@@ -44,7 +44,7 @@
     #image:hover #icon{opacity: 1;}
     @media (width: 1440px){
       #container{
-        margin-top: 300px; margin-left: 600px; width: 400px; height: 600px;
+        width: 400px; height: 600px; margin: 100px 0px;
       }
       #image img{width: 320px;height: 320px;margin-top: 23px;margin-left: 40px;}
       #text{padding: 10px 25px ;}
@@ -55,10 +55,11 @@
     }
     @media (width: 375px){
       #container{margin-left:40px;}
-    .img p{font-size: 16px;}
+    
     }
     @media (max-width: 425px){
-      #container{margin-left: 60px;}
+      #container{margin-left: 40px;}
+      .img p{font-size: 16px;}
     }
     @media(width: 320px){
       #container{margin-left: 10px;}
@@ -76,7 +77,7 @@
       <p style="font-weight: 300; letter-spacing: 1.3px;" >Our Equilibrium collection promotes balance and calm.</br></p>
       <div id="flex">
         <div>
-          <p style="color: hsl(178, 100%, 50%)"></p><svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>0.041 ETH</br></p></div>
+          <p style="color: hsl(178, 100%, 50%)" ><svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>0.041 ETH</br></p></div>
         <div>
           <p><svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>3 days left</br></p></div>
       </div>
@@ -87,7 +88,7 @@
       </div>
      <p style="padding-left: 25px;">Creation of Jules Wyvern</p>
     </div>
-    </div>
+    </div></br>
     <div class="attribution" style="color: white;">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/Subhi-c">Subhi C</a>.
